@@ -13,7 +13,7 @@ Profesora: Marcela Russo - russomarcela@gmail.com
 * Tema: Capa de Persistencia
 * Entrega: 19/09
 
-* Tema: Base de datos embebidas
+* Tema: Bases de datos embebidas
 * Entrega: 07/11
 
 # Fechas Parciales
