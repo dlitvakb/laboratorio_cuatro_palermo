@@ -20,3 +20,12 @@
 * Caracteristicas de una BBDD (6-18)
 * Modos de operacion de una BBDD (19-22)
 * Minima introduccion Oracle
+
+# Clase Cuatro
+
+* Instalacion SGBD Oracle
+* Parametros BBDD Oracle
+* Creacion BBDD Oracle
+* Interaccion con BBDD Oracle
+* Creacion Usuarios Oracle
+* Creacion de Tablas Oracle
