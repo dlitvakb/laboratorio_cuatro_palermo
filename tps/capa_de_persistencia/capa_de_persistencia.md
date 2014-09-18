@@ -126,9 +126,32 @@ Los más populares son:
 * Active Record
 * DAO/DTO (Row Data Gateway y Table Data Gateway)
 
+En los cuatro casos, si bien tienen arquitecturas y formas de uso distintos, uno de sus principales objetivos es enmascarar el
+uso de SQL detras de los objetos de dominio. Para ello, se exponen en detalle las diferentes arquitecturas.
+
 ### DataMapper
 
 ### ActiveRecord
 
 ### DAO/DTO (Data Access Object, Data Transfer Object)
 
+La arquitectura DAO/DTO esta basada en una combinacion de Row Data Gateway y Table Data Gateway.
+
+El DAO es un TDG y el DTO es un modelo de dominio que puede encapsular llamadas al DAO para las operaciones de escritura.
+
+#### Table Data Gateway
+
+Extrae una interfaz a través de la cual uno puede realizar interacciones con una tabla de la BBDD. Las que propone la interfaz son:
+
+* find(id): RecordSet
+* update(id, *args)
+* insert(*args)
+* delete(id)
+
+> *args es la lista de argumentos que corresponden para la tabla abstraida, por ejemplo en el modelo Persona, un TDG podría tener como
+> *args lo siguiente: `update(id, firstName, lastName, phoneNumber)`
+
+#### Row Data Gateway
+
+Similar al TGD, pero separa la lógica en 2 partes separadas. La lógica de lectura de datos, se realiza igual al TGD, y la de escritura,
+se embebe en el modelo de dominio.
