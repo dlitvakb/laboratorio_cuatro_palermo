@@ -131,7 +131,7 @@ uso de SQL detras de los objetos de dominio. Para ello, se exponen en detalle la
 
 ### DataMapper
 
-Los objetos y las base de datos relacionales poseen diferentes mecanismos para estructurar los datos. Muchas partes de un objeto, tales como las colecciones y la herencia, no están presentes en las base de datos relacionales. Cuando uno construye un model de objetos con una gran cantidad de lógica de negocios es importante usar estos mecanismos para una mejor organización de los datos y comportamiento. Hacerlo, llevará a que el esquema de objetos y el relacional no coincidan.
+Los objetos y las base de datos relacionales poseen diferentes mecanismos para estructurar los datos. Muchas partes de un objeto, tales como las colecciones y la herencia, no están presentes en las base de datos relacionales. Cuando uno construye un modelo de objetos con una gran cantidad de lógica de negocios es importante usar estos mecanismos para una mejor organización de los datos y comportamiento. Hacerlo, llevará a que el esquema de objetos y el relacional no coincidan.
 
 Aún se necesita transferir los datos entre estos esquemas, y este proceso se vuelve complejo. Si los objetos conocen la estructura de la base de datos, los cambios en uno tienden a propagarse al otro.
 
