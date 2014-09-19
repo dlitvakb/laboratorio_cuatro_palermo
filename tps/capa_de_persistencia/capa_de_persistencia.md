@@ -1,5 +1,7 @@
 # Capa de Persistencia
 
+PPT: https://docs.google.com/presentation/d/1n1I7Sf-ydSBTf7a9S12Xywpz762iJI7627g3twftyOQ/edit?usp=sharing
+
 ## El modelo de Capas
 
 El modelo de capas es un tipo de arquitectura de aplicaciones diseñado para
