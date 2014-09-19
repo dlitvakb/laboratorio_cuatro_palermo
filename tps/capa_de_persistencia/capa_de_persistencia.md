@@ -131,7 +131,17 @@ uso de SQL detras de los objetos de dominio. Para ello, se exponen en detalle la
 
 ### DataMapper
 
+Los objetos y las base de datos relacionales poseen diferentes mecanismos para estructurar los datos. Muchas partes de un objeto, tales como las colecciones y la herencia, no están presentes en las base de datos relacionales. Cuando uno construye un model de objetos con una gran cantidad de lógica de negocios es importante usar estos mecanismos para una mejor organización de los datos y comportamiento. Hacerlo, llevará a que el esquema de objetos y el relacional no coincidan.
+
+Aún se necesita transferir los datos entre estos esquemas, y este proceso se vuelve complejo. Si los objetos conocen la estructura de la base de datos, los cambios en uno tienden a propagarse al otro.
+
+El Data Mapper es una capa de acceso a datos que separa a los objetos de la base de datos. Su responsabilidad es la de transferir datos entre éstos, y además, la de aislarlos entre sí. Con los Data Mappers, los objetos no necesitan siquiera saber que hay una base de datos presente, tampoco necesitan una interfaz de código SQL ni conocimiento del esquema de la base de datos.
+
 ### ActiveRecord
+
+Los objetos poseen datos y comportamiento, y la mayor parte necesitan ser almacenados en una base de datos. ActiveRecord, a diferencia de Data Mapper, coloca la lógica de acceso a datos en el dominio del objeto. En el mismo se declaran el nombre de la estructura en la que se persiste (en un esquema relacional: el nombre de la tabla), los atributos que el objeto tiene - los cuales los interpreta como campos en la estructura a persistir - y sus relaciones con otras entidades.
+
+En general, los objetos de ActiveRecord son un espejo de la estructura su estructura en la base de datos.
 
 ### DAO/DTO (Data Access Object, Data Transfer Object)
 
