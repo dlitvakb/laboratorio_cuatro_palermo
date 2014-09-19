@@ -139,7 +139,9 @@ El Data Mapper es una capa de acceso a datos que separa a los objetos de la base
 
 ### ActiveRecord
 
-Los objetos poseen datos y comportamiento, y la mayor parte necesitan ser almacenados en una base de datos. ActiveRecord coloca la lógica de acceso a datos en el objeto. En el mismo se declaran el nombre de la estructura en la que se persiste (en un esquema relacional: el nombre de la tabla), los atributos que el objeto tiene - los cuales los interpreta como campos en la estructura a persistir - y sus relaciones con otras entidades.
+Los objetos poseen datos y comportamiento, y la mayor parte necesitan ser almacenados en una base de datos. ActiveRecord, a diferencia de Data Mapper, coloca la lógica de acceso a datos en el dominio del objeto. En el mismo se declaran el nombre de la estructura en la que se persiste (en un esquema relacional: el nombre de la tabla), los atributos que el objeto tiene - los cuales los interpreta como campos en la estructura a persistir - y sus relaciones con otras entidades.
+
+En general, los objetos de ActiveRecord son un espejo de la estructura su estructura en la base de datos.
 
 ### DAO/DTO (Data Access Object, Data Transfer Object)
 
